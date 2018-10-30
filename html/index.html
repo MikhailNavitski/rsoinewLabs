@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-wrapper p-3">
+                    <form onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="username">Введите ваше имя:</label>
+                            <input type="test" class="form-control" id="username" placeholder="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Введите вашу фамилию:</label>
+                            <input type="test" class="form-control" id="surname" placeholder="surname" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Выберите ваш пол:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="male" value="male" required>
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="female" value="female" required>
+                                <label class="form-check-label" for="female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Выберите ваш возраст:</label>
+                            <select class="form-control" id="age" required>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nootBooks">Выберите любимую марку ноутбука:</label>
+                            <select multiple class="form-control" id="nootBooks" required>
+                                <option>Samsung</option>
+                                <option>MacBook</option>
+                                <option>ASUS</option>
+                                <option>HP</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="wishes">Комментарии</label>
+                            <textarea class="form-control" id="wishes" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                    </form>
+                </div>
+                <div class="result-wrapper">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
